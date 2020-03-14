@@ -4,11 +4,10 @@ Kabe is an open source system for users to voluntary share location information 
 
 ## Running Locally
 * install docker desktop
-* copy `.docker.env.example` file to `.docker.env`
+* copy and paste `.env.example` to `.env`
 * run `docker-compose up -d` in this directory
 * app will be running on port `8888`
 * to set up local DB
-  * copy and paste `.env.example` to `.env`
   * fill in local DB credentials in `.env` if different from default
   * exec into php container `docker exec -it app sh`
   * cache config `php artisan config:cache`
