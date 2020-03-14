@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+#TODO - JWT reset when we implement a website
+#Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.request');
+#Route::post('password/reset', 'Auth\ResetPasswordController@postReset')->name('password.reset');

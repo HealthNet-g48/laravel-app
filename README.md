@@ -15,6 +15,11 @@ Kabe is an open source system for users to voluntary share location information 
   * check migrations status `php artisan migrate:status`
   * run migrations `php artisan migrate`
   * rollback migration `php artisan migrate:rollback --step=1`
+* FYI, I find tha sometimes I need to exec into the container (as above) to run any composer are artisan commands successfully
+* to install dependencies after pull run `composer install`
+* to update dependencies run `composer install`
+* to set up JWT secret run `php artisan jwt:secret`
+* 
 
 ## Contributing
 
