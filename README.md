@@ -19,7 +19,6 @@ Kabe is an open source system for users to voluntary share location information 
 * to install dependencies after pull run `composer install`
 * to update dependencies run `composer install`
 * to set up JWT secret run `php artisan jwt:secret`
-* 
 
 ## Contributing
 
