@@ -6,6 +6,15 @@ Kabe is an open source system for users to voluntary share location information 
 * install docker desktop
 * run `docker-compose up -d` in this directory
 * app will be running on port `8888`
+* to set up local DB
+  * copy and paste `.env.example` to `.env`
+  * fill in local DB credentials in `.env`
+  * exec into php container `docker exec -it app sh`
+  * cache config `php artisan config:cache`
+  * run database seed `php artisan migrate:install`
+  * check migrations status `php artisan migrate:status`
+  * run migrations `php artisan migrate`
+  * rollback migration `php artisan migrate:rollback --step=1`
 
 ## Contributing
 
